@@ -1,3 +1,5 @@
+
+
 # ISSUE 1 --------------------------------
 def blastoff(n):
   ''' 
@@ -6,7 +8,7 @@ def blastoff(n):
     I'm hoping that it will be used by NASA one day.
   '''
   if n == 0:
-    print 'BLASTOFF!'
+    return 'BLASTOFF!'
   print n
   blastoff(n-1) # making progress toward termination
 
