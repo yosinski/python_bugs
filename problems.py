@@ -7,8 +7,10 @@ def blastoff(n):
   '''
   if n == 0:
     print 'BLASTOFF!'
-  print n
-  blastoff(n-1) # making progress toward termination
+ 
+  if n>0:
+    print n
+    blastoff(n-1) # making progress toward termination
 
 # ISSUE 2 --------------------------------
 
@@ -48,8 +50,9 @@ def reversePrintLinkedList(n):
   if n == None:
     return
   else:
-    print n
     reversePrintLinkedList(n.next)
+    print n
+
 
 # Commented out because there seems to be some syntax error
 # class Node(object):
