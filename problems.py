@@ -6,9 +6,9 @@ def blastoff(n):
     I'm hoping that it will be used by NASA one day.
   '''
   if n == 0:
-    print 'BLASTOFF!'
-  print n
-  blastoff(n-1) # making progress toward termination
+    return 'BLASTOFF!'
+  print  n
+  return blastoff(n-1) # making progress toward termination
 
 # ISSUE 2 --------------------------------
 
