@@ -62,10 +62,15 @@ def reversePrintLinkedList(n):
 # ISSUE 6 --------------------------------
 
 def addMatricies(matA, matB):
-  ''' Returns a matrix that is the sum of matA and matB. 
-      matA and matB are 2D lists.
-  '''
-  pass # Hmm... not sure how to do this one.
+    ''' Returns a matrix that is the sum of matA and matB.
+        matA and matB are 2D lists.
+    '''
+    matC=matB
+    for i in range(len(matA)):
+        for r in range(len(matA[i])):
+            matC[i][r]=matC[i][r]+matA[i][r]
+    return matC
+
 
 # ISSUE 7 --------------------------------
 
