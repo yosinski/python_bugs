@@ -1,3 +1,7 @@
+#! /usr/bin/env python
+
+import sys
+
 
 
 # ISSUE 1 --------------------------------
@@ -136,3 +140,16 @@ def read_music_in_and_create_scale():
 
 
 
+def main():
+  if len(sys.argv) < 2:
+    print 'Nothing to do! Run like this: ./problems.py "<command>"'
+    print 'Example:'
+    print '  ./problems.py "blastoff(3)"'
+  else:
+    cmd = sys.argv[1]
+    print 'Running command: %s' % cmd
+    eval(cmd)
+
+
+if __name__ == '__main__':
+  main()
